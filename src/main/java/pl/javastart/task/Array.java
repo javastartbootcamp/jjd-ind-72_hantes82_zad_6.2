@@ -3,7 +3,7 @@ package pl.javastart.task;
 import java.util.Scanner;
 
 public class Array {
-    double[] arrDouble;
+    private double[] arrDouble;
 
     public Array(int number) {
         arrDouble = new double[number];
@@ -17,11 +17,11 @@ public class Array {
         }
     }
 
-    public double print() {
+    public void print() {
         double result = 0;
         for (int i = 0; i < arrDouble.length; i++) {
             result += Math.pow(arrDouble[i], 2);
         }
-        return result;
+        System.out.println("Suma kwadratów wszystkich elementów to: " + result);;
     }
 }

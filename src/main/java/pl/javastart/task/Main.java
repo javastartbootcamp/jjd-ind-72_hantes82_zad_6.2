@@ -10,6 +10,6 @@ public class Main {
         int size = scan.nextInt();
         Array arr = new Array(size);
         arr.fulfil();
-        System.out.println(arr.print());
+        arr.print();
     }
 }
